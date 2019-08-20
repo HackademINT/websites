@@ -35,13 +35,15 @@ disponibilité.</p>
               </p>
             </td>
             <td>
+              <form>
               {% if website.color == 'red' %}
-              <i class="fas fa-cloud-showers-heavy text-muted"> down</i>
+              <i class="fas fa-cloud-showers-heavy text-muted"><span style="display:none">down<span></i>
               {% elif website.color == 'blue' %}
-              <i class="fas fa-sun text-warning"> up</i>
+              <i class="fas fa-sun text-warning"><span style="display:none">up</span></i>
               {% else %}
-              <i class="fas fa-question text-danger" >unknown</i>
+              <i class="fas fa-question text-danger" ><span style="display:none">unknown</span></i>
               {% endif %}
+              </form>
             </td>
           </tr>
           {% endfor %}
