@@ -36,11 +36,11 @@ disponibilité.</p>
             </td>
             <td>
               {% if website.color == 'red' %}
-              <i class="fas fa-cloud-showers-heavy text-muted"></i>
+              <i class="fas fa-cloud-showers-heavy text-muted"> down</i>
               {% elif website.color == 'blue' %}
-              <i class="fas fa-sun text-warning"></i>
+              <i class="fas fa-sun text-warning"> up</i>
               {% else %}
-              <i class="fas fa-question text-danger"></i>
+              <i class="fas fa-question text-danger" >unknown</i>
               {% endif %}
             </td>
           </tr>
